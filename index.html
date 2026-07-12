@@ -8,34 +8,55 @@
 </head>
 <body>
 
+    <!-- Yêu cầu 2: liên kết "Chuyển đến Nội dung chính", đặt trước thẻ main trong tệp -->
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
     <header>
         <h1>Khám Phá Thiên Nhiên Việt Nam</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Những địa điểm nổi tiếng</h2>
+    <!-- Yêu cầu 4 & 5: thẻ nav với ảnh nhỏ bên trong -->
+    <nav>
+        <ul>
+            <li>
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=100" alt="">
+                <a href="#diadiem">Địa điểm</a>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=100" alt="">
+                <a href="#hinhanh">Hình ảnh</a>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=100" alt="">
+                <a href="#timhieuthem">Tìm hiểu thêm</a>
+            </li>
+        </ul>
+    </nav>
 
-            <ul>
+    <!-- Yêu cầu 2: id để skip link nhảy tới -->
+    <main id="main-content">
+        <section id="diadiem">
+            <h2>Những địa điểm nổi tiếng</h2>
+            <!-- Yêu cầu 6, 8: lớp grid, 2 cột ~40% -->
+            <ul class="grid">
                 <li>Vịnh Hạ Long</li>
                 <li>Sa Pa</li>
                 <li>Phong Nha - Kẻ Bàng</li>
             </ul>
         </section>
 
-        <section>
+        <section id="hinhanh">
             <h2>Hình ảnh</h2>
-
-            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500" alt="Vịnh Hạ Long" width="300">
-
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="Ruộng bậc thang Sa Pa" width="300">
-
-            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500" alt="Phong cảnh thiên nhiên" width="300">
+            <!-- Yêu cầu 7, 9: lớp flex, ảnh rộng 100% -->
+            <div class="flex">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500" alt="Vịnh Hạ Long">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="Ruộng bậc thang Sa Pa">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500" alt="Phong cảnh thiên nhiên">
+            </div>
         </section>
 
-        <section>
+        <section id="timhieuthem">
             <h2>Tìm hiểu thêm</h2>
-
             <p>
                 Truy cập
                 <a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam" target="_blank">
@@ -49,6 +70,5 @@
     <footer>
         <p>&copy; 2026 Trang web học HTML.</p>
     </footer>
-
 </body>
 </html>
