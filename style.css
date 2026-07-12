@@ -9,6 +9,9 @@ header {
 
 nav {
     background-color: lightgray;
+    /* Yêu cầu 4: nav dùng inline-block và rộng khoảng 80% */
+    display: inline-block;
+    width: 80%;
 }
 
 main {
@@ -33,4 +36,56 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+/* Yêu cầu 2: liên kết bỏ qua - ẩn cho tới khi được focus (dùng phím Tab) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Yêu cầu 5: chỉ style ảnh bên trong nav, rộng khoảng 10% */
+nav img {
+    width: 10%;
+    vertical-align: middle;
+}
+
+/* Yêu cầu 6 & 8: lớp grid - 2 cột khoảng 40% mỗi cột */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+/* .grid li cần bỏ width cố định 150px để không xung đột với cột grid */
+.grid li {
+    width: auto;
+}
+
+/* Yêu cầu 7: chỉ style ảnh bên trong .grid, rộng 100% */
+.grid img {
+    width: 100%;
+}
+
+/* Yêu cầu 9: lớp flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex img {
+    width: 30%;
 }
